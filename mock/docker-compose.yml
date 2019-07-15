@@ -1,0 +1,30 @@
+version: '2'
+services:
+  postgres_db:
+    image: postgres
+    ports:
+      - "5432"
+    environment:
+      POSTGRES_PASSWORD: "hunter2"
+  ephemeral:
+    image: postgres
+    links:
+      - postgres_db
+    volumes:
+      - ./db:/root
+    command: >
+      bash -c "sleep 20
+      && createdb -h postgres_db -p 5432 -U postgres -w -e sandbar_dev
+      && pg_restore -h postgres_db -d sandbar_dev --no-owner -U postgres ~/dump.pg"
+  postgReST:
+    image: begriffs/postgrest
+    links:
+      - postgres_db
+    ports:
+      - "3000:3000"
+    environment:
+      PG_ENV_POSTGRES_USER: "postgres"
+      PG_ENV_POSTGRES_PASSWORD: "hunter2"
+      PG_PORT_5432_TCP_ADDR: postgres_db
+      PG_PORT_5432_TCP_PORT: "5432"
+      PG_ENV_POSTGRES_DB: "sandbar_dev"

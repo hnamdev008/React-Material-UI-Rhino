@@ -1,0 +1,1 @@
+export interface InputState { input?: any, isValid: boolean };

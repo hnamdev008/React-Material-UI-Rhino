@@ -1,0 +1,779 @@
+@font-face {
+    font-family: rajdhani;
+    src: url('../../assets/fonts/Rajdhani-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: rajdhani;
+}
+
+#content {
+    text-align: center;
+    min-height: 80vh;
+    margin: 105px 50px 0px 50px;
+}
+
+#content-body {
+    display:inline-block;
+    vertical-align: top;
+}
+
+.panel-heading {
+    display: table;
+    width: 100%;
+}
+
+#panel-title {
+    display: table-cell;
+}
+
+#panel-context {
+    display: table-cell;
+    text-align: right;
+    padding-top: 16px;
+    font-size: 24px;
+}
+
+.panel-body {
+    padding: 30px;
+    margin: 0;
+}
+
+#panel-context button {
+    vertical-align: top;
+    display:inline-block;
+    color: white;
+    padding: 0;
+    padding-left: 2px;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    margin: 0;
+}
+
+#panel-context li {
+    margin: 0;
+}
+
+#modal-context button {
+    margin-top: 20px;
+    vertical-align: top;
+    display:inline-block;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    overflow: visible;
+    width: 130px;
+    white-space: nowrap;
+}
+
+.ic {
+    color: #f55e55;
+    text-align: right;
+}
+
+.btn {
+    font-family: rajdhani;
+}
+
+#modal-context button, .panel-body button {
+    background-color: white;
+    border: none;
+    color: #f55e55;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 8px 15px 8px 15px;
+    margin-bottom: 4px;
+    width: 120px;
+    outline: none;
+}
+
+#modal-context button:hover, .panel-body button:hover {
+    background-color: #E9E9F1
+}
+
+#modal-context .btn-confirm-prompt span {
+    display: inline-block;
+    background-color: #f55e55;
+    color: white;
+    font-size: 20px;
+    padding: 8px 15px 8px 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#modal-context .btn-confirm-prompt button {
+    border-radius: 0px;
+    width: 60px;
+    border-right: 1px solid #f55e55;
+}
+
+#modal-context .btn-confirm-prompt button:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 70px;
+    border: 0px; 
+}
+
+#ribbon {
+    text-align: left;
+    color: white;
+    background-color: rgba(28,28,38, .85);
+    /*background-color: rgba(215,64,55, .7);*/
+    width: 100%;
+    font-size: 18px;
+    display: table;
+}
+
+#ribbon a:link {
+    color: white
+}
+#ribbon a:visited {
+    color: white;
+}
+#ribbon li:hover {
+    background-color: rgb(43, 43, 53);
+    color: white;
+}
+#ribbon a:active {
+    color: white;
+}
+
+#ribbon li {
+    padding: 10px 0px 10px 0px;
+    height: 48px;
+    padding-top: 12px;
+}
+
+#ribbon li span {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px 6px 0px 5px;
+}
+
+/*#ribbon li:last-child {
+    border-left: 1px solid white;
+}
+
+#ribbon li:last-child a:link {
+    font-weight: bold;
+    text-decoration: none;
+}*/
+
+#ribbon .hilite {
+    background-color: rgb(43, 43, 53);
+}
+
+.list-inline {
+    margin: 0;
+}
+
+#gutter {
+    background-color: rgb(215,64,55);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+}
+
+#gutter li a {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 6px 20px 6px 20px;
+}
+
+#gutter li {
+    font-size: 18px;
+    padding: 0;
+    /*border-right: 2px solid #33333D #474751;*/
+}
+
+#gutter a:link {
+    color: white
+}
+#gutter a:visited {
+    color: white;
+}
+#gutter li:hover a {
+    text-decoration: none;
+}
+#gutter li:hover {
+    background-color: #f55e55;
+    color: white;
+}
+#gutter a:active {
+    color: white;
+}
+
+.panel {
+    text-align: left;
+    display: inline-block;
+    background-color: rgba(28,28,38, .7);
+    border-radius: 0px;
+    border: 0px;
+    height: 100%;
+}
+
+#content .panel-heading {
+    border: 0px;
+    border-radius: 0px;
+    color: white;
+    background-color: rgb(215,64,55);
+}
+
+#login-form {
+    display: inline-block;
+}
+
+#login-form div {
+    height: 70px;
+}
+
+#profile-form label {
+    color: white;
+}
+
+#profile-form div {
+    height: 70px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.alert-wrapper {
+    opacity: .9;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.alert-wrapper .alert.alert-danger {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    background-color: black;
+    color: #D74037;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+}
+
+.alert-wrapper button {
+    outline: none;
+}
+
+.alert-wrapper button span {
+    color: #D74037;
+}
+
+.skiff-fade-enter, .skiff-fade-appear {
+  opacity: 0.01;
+}
+
+.skiff-fade-enter.skiff-fade-enter-action, .skiff-fade-appear.skiff-fade-appear-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.skiff-fade-leave {
+  opacity: 1;
+}
+
+.skiff-fade-leave.skiff-fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.tri {
+    display: block;
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid black;
+}
+
+.input-msg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    background-color: black;
+    color: #D74037;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    min-width: 200px;
+    max-width: 300px
+}
+
+.input-msg-wrapper {
+    font-size: 18px;
+    margin-top: 6px;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.dropdown-msg {
+    position: absolute;
+    bottom: 64px;
+}
+
+.cell {
+    font-family: rajdhani;
+    background-color: rgb(51, 51, 61);
+    padding: 10px;
+    float: left;
+    max-width: 200px;
+    min-width: 50px;
+    max-height: 100px;
+    min-height: 50px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgb(43, 43, 53);
+    word-wrap: break-word;
+}
+
+/*http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page*/
+#footer {
+    /*position: fixed;
+    bottom: 0px;
+    right: 0px;*/
+    color: white;
+    background-color: rgb(28,28,38);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+}
+
+.modal {
+    border-radius: none;
+}
+
+.modal-dialog {
+    display:inline-block;
+}
+
+.modal-content {
+    background-color: rgb(43, 43, 53);
+    text-align: left;
+}
+
+.modal-title {
+    color: white;
+}
+
+.modal-header {
+    border-bottom: 2px solid rgb(51, 51, 61);
+}
+
+.modal input, .panel input {
+    color: white;
+    border: none;
+    background-color: rgb(51, 51, 61);
+}
+
+.modal form label {
+    color: white;
+}
+
+.modal .ui.search.dropdown.selection {
+    display: block;
+    background-color: #33333D;
+    font-size: 20px;
+    color: white;
+    border-radius: 7px;
+    height: 46px;
+}
+
+.modal .ui.search.dropdown.selection.active {
+    border: none;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.modal .ui.search.dropdown.selection .dropdown.icon {
+    display: none;
+}
+
+/*.modal .ui.search.dropdown.selection input.search:focus {
+    border-color: green;
+}*/
+
+.modal .ui.search.dropdown.selection .menu {
+    border: 0;
+    border-color:#66afe9;
+    outline:0;
+}
+
+.modal .ui.search.dropdown.selection .menu .item {
+    background-color: #33333D;
+    font-size: 20px;
+    color: white;
+    border: 0;
+}
+
+.table {
+    color: white;
+    font-size: 16px;
+}
+
+.table tr:nth-child(even) {
+    background: #1C1C26;
+}
+
+.table tr:nth-child(odd) {
+    background: #2B2B35
+}
+
+.table>tbody>tr>th, .table>tbody>tr>td {
+    border-top: none;
+}
+
+.table>tbody>tr {
+    cursor: pointer;
+}
+
+.table>tbody>tr>td {
+    text-align: left;
+}
+
+.table>tbody>tr:hover td {
+    background: #33333D;
+}
+
+.guide {
+    color: white;
+    font-size: 16px;
+}
+
+.guide a:link {
+    color: #D74037
+}
+.guide a:visited {
+    color: #D74037;
+}
+.guide a:active {
+    color: #D74037;
+}
+
+#context-pane {
+    /*opacity: .3;*/
+    /*background-color: rgb(28,28,38);*/
+    background: #D74037; /* For browsers that do not support gradients */
+    /*rgba(215,64,55, .9)*/
+    /*rgba(246,122,86, 1)*/
+    background: linear-gradient(to bottom right, rgba(246,122,86, 1), rgba(215,64,55, .05)); /* Standard syntax */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /*top: 8%;*/
+    /*top: 50%;*/
+    height: 100%;
+    /*bottom: 10%;*/
+    width: 43%;
+    z-index: 100;
+    /*margin-top: 44px;*/
+}
+
+#context-pane-content {
+    position: relative;
+    /*background-color: green;*/
+    /*width: 50%;*/
+}
+
+#context-pane-toggle {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    /*background-color: rgba(255, 255, 255, .2);*/
+    /*background-color: white;*/
+    background: transparent;
+    /*top: 48%;*/
+    right: 0px;
+    /*border-radius: 50px;*/
+    /*border: 3px solid rgb(28,28,38);*/
+    /*padding: 9px 10px 0px 10px;*/
+    height: 100%;
+    outline: none;
+    border: none;
+    border-left: 1px solid rgba(255, 255, 255, .1);
+}
+
+.skiff-slide-enter #context-pane {
+  width: 0px;
+  background-color: green;
+}
+
+.skiff-scroll-enter.skiff-scroll-enter-action {
+  width: 500px;
+  transition: width 2000ms ease-in;
+}
+
+.skiff-scroll-leave {
+  width: 500px;
+}
+
+.skiff-scroll-leave.skiff-scroll-leave-active {
+  width: 0px;
+  transition: width 2000ms ease-in;
+}
+
+/*https://dribbble.com/shots/1270032-SJQHUB-B-I-Dashboard/attachments/174562*/
+/*https://dribbble.com/shots/1423171-Some-Analytics*/
+
+.dialog-body {
+    position: relative;
+}
+
+ul.dialog-context {
+    position: absolute;
+    right: -200px;
+    top: 0px;
+    list-style-type: none;
+}
+
+.dialog-context button {
+    background-color: white;
+    border: none;
+    color: #f55e55;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 8px 15px 8px 15px;
+    margin-bottom: 6px;
+    width: 190px;
+    outline: none;
+}
+
+/*proxy form submit 'button''*/
+.dialog-context label {
+    background-color: white;
+    border: none;
+    color: #f55e55;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 8px 15px 8px 15px;
+    margin-bottom: 6px;
+    width: 190px;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: center;
+}
+
+.dialog-context .btn-confirm-prompt span {
+    display: inline-block;
+    background-color: #f55e55;
+    color: white;
+    font-size: 20px;
+    padding: 8px 15px 8px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dialog-context .btn-confirm-prompt button {
+    border-radius: 0px;
+    width: 60px;
+    border: 0px;
+}
+
+.dialog-context .btn-confirm-prompt button:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 70px;
+    border-right: 1px solid #f55e55; 
+}
+
+.dialog-context button:hover, .dialog-context label:hover {
+    background-color: #E9E9F1
+}
+
+/*https://medium.com/@jamesfuthey/simulating-the-creation-of-website-thumbnail-screenshots-using-iframes-7145269891db#.x09peg56b*/
+/*consider polyfill to support: http://stackoverflow.com/a/30273995*/
+.thumbnail iframe {
+  width: 1440px;
+  height: 900px;
+}
+
+.thumbnail {
+  width: 1440px;
+  height: 900px;
+  position: relative;
+  -ms-zoom: 0.25;
+  -moz-transform: scale(0.25);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.25);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.25);
+  -webkit-transform-origin: 0 0;
+}
+
+.thumbnail:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.thumbnail-container {
+  width: calc(1440px * 0.25);
+  height: calc(900px * 0.25);
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.preview {
+    height: 500px;
+}
+
+.preview iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.paginator-paginator a:link {
+    border: 1px solid rgb(28,28,38);
+    background-color: rgb(28,28,38);
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.paginator-paginator a:visited {
+    border: 1px solid rgb(28,28,38);
+    color: white;
+}
+
+.paginator-paginator a:hover {
+    border: 1px solid rgb(51,51,61);
+    background-color: rgb(51,51,61);
+}
+
+.paginator-curr-page a:link {
+    border: 1px solid #f55e55;
+    background-color: #f55e55;
+    color: white;
+}
+
+.paginator-curr-page a:hover {
+    border: 1px solid #D74037;
+    background-color: #D74037;
+    color: white;
+}
+
+.paginator-curr-page a:visited {
+    border: 1px solid #f55e55;
+    background-color: #f55e55;
+    color: white;
+}
+
+.upload-zone {
+    border: 2px white dashed;
+    height: 40px;
+    margin-top: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.upload-zone svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#spreadsheet .react-grid-HeaderCell {
+    background-color: rgb(51,51,61);
+    border: 1px solid rgb(28,28,38);
+    padding: 3px;
+    color: white;
+    overflow: hidden;
+}
+
+#spreadsheet .react-grid-Cell {
+    border: 1px solid rgb(28,28,38);
+    padding: 3px;
+    overflow: hidden;
+}
+
+#right-hand-menu {
+    display: inline;
+}
+
+.list-inline {
+    display: inline;
+}
+
+#ribbon #right-hand-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#ribbon #left-hand-menu {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.triangle-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position:relative;
+    bottom: -7px;
+    margin: auto;
+    width: 10px;
+}
+.triangle-up:after{
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid rgb(215,64,55);  
+    position:absolute;
+    top:1px;
+    left:-9px;
+}
+
+.icon-menu-item:hover {
+    background-color: rgb(43, 43, 53);
+}
+
+/*.icon-menu-item-selected:before{
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position:absolute;
+    bottom:-1px;
+    left:15px;
+}
+
+.icon-menu-item-selected:after{
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #1C1C26;
+    position:absolute;
+    bottom:-1px;
+    left:16px;
+}*/

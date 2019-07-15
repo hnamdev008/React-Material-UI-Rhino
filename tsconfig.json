@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./dist/",
+//        "rootDir": "src",
+        "lib": ["ES6", "ES2015", "DOM"],
+//        "removeComments": true,
+//        "preserveConstEnums": true,
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "sourceMap": true,
+        "allowJs": true
+    },
+    "include": [
+        "src"
+    ],
+    "awesomeTypescriptLoaderOptions": {
+//        "useCache": true,
+//        "useTranspileModule": true,
+        "transpileOnly": true
+    }
+}
